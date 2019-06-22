@@ -12,6 +12,7 @@ Date: 2018-03-14
 
 import tkinter
 import tkinter.messagebox
+from tkinter import ttk
 
 
 def main():
@@ -42,9 +43,9 @@ def main():
     # 创建一个装按钮的容器
     panel = tkinter.Frame(top)
     # 创建按钮对象
-    button1 = tkinter.Button(panel, text='修改', command=change_label_text)
+    button1 = ttk.Button(panel, text='修改', command=change_label_text)
     button1.pack(side='left')
-    button2 = tkinter.Button(panel, text='退出', command=confirm_to_quit)
+    button2 = ttk.Button(panel, text='退出', command=confirm_to_quit)
     button2.pack(side='right')
     panel.pack(side='bottom')
     # 开启主事件循环
